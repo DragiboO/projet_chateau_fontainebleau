@@ -103,4 +103,16 @@ header nav ul li a:hover {
   text-decoration-color: var(--text-color-3);
 }
 
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background-color: var(--header-color);
+}
+footer a {
+  text-decoration: none;
+  color: var(--text-color-1);
+}
+
 /*# sourceMappingURL=style.css.map */
