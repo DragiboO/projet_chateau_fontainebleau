@@ -70,6 +70,8 @@ html {
 header {
   background-color: var(--header-color);
   padding: 20px 80px;
+  position: sticky;
+  top: 0;
 }
 header nav {
   display: flex;
@@ -160,10 +162,46 @@ main .info .pres {
 main .info .pres h3 {
   font-size: 28px;
   padding: 24px;
+  color: var(--text-color-4);
 }
 main .info .pres p {
   padding-bottom: 12px;
   line-height: 20px;
+  color: var(--text-color-2);
+}
+main .galerie {
+  padding: 80px;
+  background-color: var(--main-color-2);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+main .galerie .titre {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 32px;
+}
+main .galerie .titre h2 {
+  font-size: 40px;
+  color: var(--text-color-1);
+  padding-bottom: 5px;
+  border-bottom: 3px solid var(--text-color-3);
+}
+main .galerie .titre-part h3 {
+  font-size: 28px;
+  padding: 40px 64px;
+  color: var(--text-color-4);
+}
+main .galerie .g {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 16px;
+}
+main .galerie .g div img {
+  width: 100%;
+  height: 300px;
+  object-position: center;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */

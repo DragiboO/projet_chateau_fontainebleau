@@ -2,6 +2,8 @@ header {
 
     background-color: var(--header-color);
     padding: 20px 80px;
+    position: sticky;
+    top: 0;
 
     nav {
 
