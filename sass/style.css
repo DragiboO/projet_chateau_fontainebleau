@@ -115,4 +115,55 @@ footer a {
   color: var(--text-color-1);
 }
 
+main .chateau {
+  height: 70vh;
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.3) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(0, 0, 0, 0.3) 100%), url("/img/chateau-1.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+main .chateau a {
+  text-decoration: none;
+}
+main .chateau a p {
+  color: var(--text-color-1);
+  padding: 20px;
+  border: 2px solid var(--text-color-3);
+  border-radius: 10px;
+  background-color: var(--main-color-1);
+  line-height: 20px;
+}
+main .info {
+  padding: 80px;
+  background-color: var(--main-color-1);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+main .info .titre {
+  display: flex;
+  justify-content: center;
+}
+main .info .titre h2 {
+  font-size: 40px;
+  color: var(--text-color-1);
+  padding-bottom: 5px;
+  border-bottom: 3px solid var(--text-color-3);
+}
+main .info .pres {
+  padding: 40px;
+}
+main .info .pres h3 {
+  font-size: 28px;
+  padding: 24px;
+}
+main .info .pres p {
+  padding-bottom: 12px;
+  line-height: 20px;
+}
+
 /*# sourceMappingURL=style.css.map */
