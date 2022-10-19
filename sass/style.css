@@ -53,5 +53,54 @@ table {
 }
 
 /* ---------------------------------------------------- */
+html {
+  font-family: "Merriweather", serif;
+}
+
+:root {
+  --header-color: #7bacec;
+  --main-color-1: #adcbf3;
+  --main-color-2: #bdd5f5;
+  --text-color-1: #090f17;
+  --text-color-2: #000000;
+  --text-color-3: #3f6aa2;
+  --text-color-4: #243c5c;
+}
+
+header {
+  background-color: var(--header-color);
+  padding: 20px 80px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav a {
+  text-decoration: none;
+}
+header nav a p {
+  font-size: 32px;
+  color: var(--text-color-1);
+}
+header nav a p:hover {
+  color: var(--text-color-4);
+}
+header nav ul {
+  display: flex;
+  gap: 20px;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--text-color-1);
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--text-color-3);
+}
 
 /*# sourceMappingURL=style.css.map */
