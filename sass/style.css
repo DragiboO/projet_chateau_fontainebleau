@@ -203,5 +203,60 @@ main .galerie .g div img {
   object-position: center;
   object-fit: cover;
 }
+main .contact {
+  padding: 80px;
+  background-color: var(--main-color-1);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+main .contact .titre {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 64px;
+}
+main .contact .titre h2 {
+  font-size: 40px;
+  color: var(--text-color-1);
+  padding-bottom: 5px;
+  border-bottom: 3px solid var(--text-color-3);
+}
+main .contact .contact-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+main .contact .contact-info .horraire {
+  width: 50%;
+}
+main .contact .contact-info .horraire p {
+  font-size: 18px;
+  padding-bottom: 16px;
+  line-height: 20px;
+  color: var(--text-color-2);
+}
+main .contact .contact-info .horraire p span {
+  font-weight: bold;
+}
+main .contact .contact-info .site {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+main .contact .contact-info .site a {
+  padding-bottom: 12px;
+  color: var(--text-color-1);
+  font-size: 20px;
+  line-height: 22px;
+}
+main .contact .contact-info .site a:hover {
+  color: var(--text-color-3);
+}
+main .contact .contact-info .site p {
+  color: var(--text-color-1);
+  font-size: 20px;
+  line-height: 22px;
+}
 
 /*# sourceMappingURL=style.css.map */
