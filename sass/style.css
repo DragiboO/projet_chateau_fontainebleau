@@ -73,6 +73,16 @@ header {
   position: sticky;
   top: 0;
 }
+@media screen and (max-width: 570px) {
+  header {
+    padding: 15px 40px;
+  }
+}
+@media screen and (max-width: 400px) {
+  header {
+    padding: 10px 20px;
+  }
+}
 header nav {
   display: flex;
   justify-content: space-between;
@@ -85,12 +95,28 @@ header nav a p {
   font-size: 32px;
   color: var(--text-color-1);
 }
+@media screen and (max-width: 480px) {
+  header nav a p {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 360px) {
+  header nav a p {
+    font-size: 20px;
+  }
+}
 header nav a p:hover {
   color: var(--text-color-4);
 }
 header nav ul {
   display: flex;
   gap: 20px;
+}
+@media screen and (max-width: 800px) {
+  header nav ul {
+    flex-direction: column;
+    gap: 5px;
+  }
 }
 header nav ul li {
   list-style: none;
@@ -112,6 +138,16 @@ footer {
   padding: 20px 80px;
   background-color: var(--header-color);
 }
+@media screen and (max-width: 570px) {
+  footer {
+    padding: 20px 40px;
+  }
+}
+@media screen and (max-width: 400px) {
+  footer {
+    padding: 20px 20px;
+  }
+}
 footer a {
   text-decoration: none;
   color: var(--text-color-1);
@@ -132,6 +168,16 @@ main .chateau {
   justify-content: flex-start;
   align-items: flex-end;
 }
+@media screen and (max-width: 570px) {
+  main .chateau {
+    padding: 80px 40px;
+  }
+}
+@media screen and (max-width: 400px) {
+  main .chateau {
+    padding: 40px 20px;
+  }
+}
 main .chateau a {
   text-decoration: none;
 }
@@ -150,6 +196,16 @@ main .info {
   justify-content: center;
   flex-direction: column;
 }
+@media screen and (max-width: 570px) {
+  main .info {
+    padding: 80px 40px;
+  }
+}
+@media screen and (max-width: 400px) {
+  main .info {
+    padding: 40px 20px;
+  }
+}
 main .info .titre {
   display: flex;
   justify-content: center;
@@ -160,8 +216,23 @@ main .info .titre h2 {
   padding-bottom: 5px;
   border-bottom: 3px solid var(--text-color-3);
 }
+@media screen and (max-width: 400px) {
+  main .info .titre h2 {
+    font-size: 32px;
+  }
+}
 main .info .pres {
   padding: 40px;
+}
+@media screen and (max-width: 570px) {
+  main .info .pres {
+    padding: 40px 20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  main .info .pres {
+    padding: 40px 0;
+  }
 }
 main .info .pres h3 {
   font-size: 28px;
@@ -180,6 +251,16 @@ main .galerie {
   justify-content: center;
   flex-direction: column;
 }
+@media screen and (max-width: 570px) {
+  main .galerie {
+    padding: 80px 40px;
+  }
+}
+@media screen and (max-width: 400px) {
+  main .galerie {
+    padding: 40px 20px;
+  }
+}
 main .galerie .titre {
   display: flex;
   justify-content: center;
@@ -191,15 +272,35 @@ main .galerie .titre h2 {
   padding-bottom: 5px;
   border-bottom: 3px solid var(--text-color-3);
 }
+@media screen and (max-width: 400px) {
+  main .galerie .titre h2 {
+    font-size: 32px;
+  }
+}
 main .galerie .titre-part h3 {
   font-size: 28px;
   padding: 40px 64px;
   color: var(--text-color-4);
 }
+@media screen and (max-width: 570px) {
+  main .galerie .titre-part h3 {
+    padding: 40px 44px;
+  }
+}
+@media screen and (max-width: 400px) {
+  main .galerie .titre-part h3 {
+    padding: 30px 24px;
+  }
+}
 main .galerie .g {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 16px;
+}
+@media screen and (max-width: 480px) {
+  main .galerie .g {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
 }
 main .galerie .g div img {
   width: 100%;
@@ -207,12 +308,27 @@ main .galerie .g div img {
   object-position: center;
   object-fit: cover;
 }
+@media screen and (max-width: 480px) {
+  main .galerie .g div img {
+    height: 250px;
+  }
+}
 main .contact {
   padding: 80px;
   background-color: var(--main-color-1);
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+@media screen and (max-width: 570px) {
+  main .contact {
+    padding: 80px 40px;
+  }
+}
+@media screen and (max-width: 400px) {
+  main .contact {
+    padding: 40px 20px;
+  }
 }
 main .contact .titre {
   display: flex;
@@ -225,13 +341,39 @@ main .contact .titre h2 {
   padding-bottom: 5px;
   border-bottom: 3px solid var(--text-color-3);
 }
+@media screen and (max-width: 400px) {
+  main .contact .titre h2 {
+    font-size: 32px;
+  }
+}
 main .contact .contact-info {
   display: flex;
   justify-content: space-between;
   padding: 40px;
 }
+@media screen and (max-width: 800px) {
+  main .contact .contact-info {
+    flex-wrap: wrap;
+    gap: 80px;
+  }
+}
+@media screen and (max-width: 570px) {
+  main .contact .contact-info {
+    padding: 40px 20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  main .contact .contact-info {
+    padding: 20px 0;
+  }
+}
 main .contact .contact-info .horraire {
   width: 50%;
+}
+@media screen and (max-width: 800px) {
+  main .contact .contact-info .horraire {
+    width: 100%;
+  }
 }
 main .contact .contact-info .horraire p {
   font-size: 18px;
@@ -247,6 +389,11 @@ main .contact .contact-info .site {
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+@media screen and (max-width: 800px) {
+  main .contact .contact-info .site {
+    width: 100%;
+  }
 }
 main .contact .contact-info .site a {
   padding-bottom: 12px;
@@ -269,6 +416,17 @@ main .contact .contact-info .site p {
   background-color: var(--main-color-1);
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 570px) {
+  .mentions {
+    padding: 80px 40px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .mentions {
+    padding: 40px 20px;
+    min-height: calc(100vh - 200px);
+  }
 }
 .mentions .titre {
   display: flex;
