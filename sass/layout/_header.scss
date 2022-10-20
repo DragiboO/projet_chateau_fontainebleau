@@ -13,7 +13,7 @@ header {
 
         a {
             text-decoration: none;
-            
+
             p {
                 font-size: 32px;
                 color: var(--text-color-1);
@@ -27,6 +27,10 @@ header {
         ul {
             display: flex;
             gap: 20px;
+
+            // @include mixin.breakpoint(850px) {
+            //     flex-direction: column;
+            // }
 
             li {
                 list-style: none;
